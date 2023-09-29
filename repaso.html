@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Ingresante</legend><br>
+            <label for="Name">Nombre</label>
+            <input type="text" name="nombre" id="Name"><br>
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" id="Apellido"><br>
+            <label for="DNI">DNI</label>
+            <input type="text" maxlength="8" name="DNI" id="DNI"><br>
+            <label for="Birth">Fecha de Nacimiento</label>
+            <input type="date" name="Birth" id="Birth"><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Regular</legend><br>
+            <label for="NomApe">Nombre y Apellido</label>
+            <input type="text" name="NomApe" id="NomApe"><br>
+            <input type="radio" name="Cargo" id="Profe">
+            <label>Profesor</label><br>
+            <label for="MatAsig">Materia Asignada</label>
+            <select name="MatAsig" id="MatAsig">
+                <option>None</option>
+                <option value="Math">Matematica</option>
+                <option value="Leng">Lengua</option>
+                <option value="Ing">Ingles</option>
+            </select><br>
+            <input type="radio" name="Cargo" id="Alum">
+            <label>Alumno</label><br>
+            <label>Turno</label><br>
+            <input type="checkbox" name="Turno" id="Mañana">
+            <label for="Mañana">Mañana</label><br>
+            <input type="checkbox" name="Turno" id="Tarde">
+            <label for="Tarde">Tarde</label><br>
+            <label for="dni">DNI: </label>
+            <input type="number" max="8" id="dni" name="dni"><br>
+            <label for="Adeu">Cant de materias adeudadas: </label>
+            <input type="number" name="Adeu" id="Adeu"><br>
+            <label for="Coment">Comentarios para mejorar el ambito escolar</label><br>
+            <textarea name="Coment" id="Coment" cols="30" rows="10"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Crear Cuenta</legend><br>
+            <label for="UserName">Nombre del Usuario</label>
+            <input type="text" name="UserName" id="UserName"><br>
+            <label for="Contr">Contraseña</label>
+            <input type="password" name="Contr" id="Contr"><br>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email"><br>
+            <label for="Foto">Foto carnet</label>
+            <input type="file" name="Foto" id="Foto"><br>
+            <input type="radio" name="Noti" id="Noti">
+            <label for="Noti">Recebir notificaciones</label>
+        </fieldset>
+        <input type="submit" name="submit" id="submit" value="Enviar">
+        <input type="reset" name="reset" id="reset" value="Borrar">
+    </form>
+</body>
+</html>

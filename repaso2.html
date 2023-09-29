@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" enctype="multipart/form-data" method="post">
+        <fieldset>
+            <legend>Crear Cuenta</legend><br>
+            <label for="Nom">Nombre Usuario</label>
+            <input type="text" name="Nom" id="Nom"><br>
+            <label for="Nick">Nombre Publico</label>
+            <input type="text" name="Nick" id="Nick" maxlength="10"><br>
+            <label for="Contr">Contraseña</label>
+            <input type="password" name="Contr" id="Contr"><br>
+            <label for="Tel">Num telefono</label>
+            <input type="number" name="tel" id="tel" max="999999999"><br>
+            <input type="checkbox" name="Noti" id="Noti">
+            <label for="Noti">Permitir Notificaciones</label><br>
+            <textarea name="Sugerencias" id="Suge" cols="30" rows="10">Ingrese sugerencais...</textarea><br>
+            <label>Recordarme</label><br>
+            <input type="radio" name="Rest" id="Si"><label for="Si">Si</label>
+            <input type="radio" name="Rest" id="No" checked><label for="No">No</label><br>
+            <label for="Foto">Ingresar foto</label>
+            <input type="file" name="Foto" id="Foto"><br>
+            <label for="Version">Elegir una version</label>
+            <select name="Version" id="Version">
+                <option>None</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+            </select>
+        </fieldset>
+        <input type="submit" name="Submit" id="Submit" value="Enviar">
+        <input type="reset" name="reste" id="reset" value="Borrar">
+    </form>
+</body>
+</html>
